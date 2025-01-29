@@ -1,27 +1,27 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + HeroUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: "Torchstone Media",
+  description: "Landing page de Torchstone Media.",
   navItems: [
     {
-      label: "Home",
+      label: "Inicio",
       href: "/",
     },
     {
-      label: "Docs",
+      label: "Servicios",
       href: "/docs",
     },
     {
-      label: "Pricing",
+      label: "Contacto",
       href: "/pricing",
     },
     {
-      label: "Blog",
+      label: "Misión y Visión",
       href: "/blog",
     },
     {
-      label: "About",
+      label: "Equipo",
       href: "/about",
     },
   ],
