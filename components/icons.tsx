@@ -185,3 +185,59 @@ export const SearchIcon = (props: IconSvgProps) => (
     />
   </svg>
 );
+
+
+export const IgIcon = (props: IconSvgProps) => (
+  <svg height="22px" width="22px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 551.034 551.034" xmlSpace="preserve">
+    <g id="XMLID_13_">
+
+      <linearGradient id="XMLID_2_" gradientUnits="userSpaceOnUse" x1="275.517" y1="4.5714" x2="275.517" y2="549.7202" gradientTransform="matrix(1 0 0 -1 0 554)">
+        <stop offset="0" style={{ stopColor: "#E09B3D" }} />
+        <stop offset="0.3" style={{ stopColor: "#C74C4D" }} />
+        <stop offset="0.6" style={{ stopColor: "#C21975" }} />
+        <stop offset="1" style={{ stopColor: "#7024C4" }} />
+      </linearGradient>
+      <path id="XMLID_17_" style={{ fill: "url(#XMLID_2_)" }} d="M386.878,0H164.156C73.64,0,0,73.64,0,164.156v222.722
+		c0,90.516,73.64,164.156,164.156,164.156h222.722c90.516,0,164.156-73.64,164.156-164.156V164.156
+		C551.033,73.64,477.393,0,386.878,0z M495.6,386.878c0,60.045-48.677,108.722-108.722,108.722H164.156
+		c-60.045,0-108.722-48.677-108.722-108.722V164.156c0-60.046,48.677-108.722,108.722-108.722h222.722
+		c60.045,0,108.722,48.676,108.722,108.722L495.6,386.878L495.6,386.878z"/>
+
+      <linearGradient id="XMLID_3_" gradientUnits="userSpaceOnUse" x1="275.517" y1="4.5714" x2="275.517" y2="549.7202" gradientTransform="matrix(1 0 0 -1 0 554)">
+        <stop offset="0" style={{ stopColor: "#E09B3D" }} />
+        <stop offset="0.3" style={{ stopColor: "#C74C4D" }} />
+        <stop offset="0.6" style={{ stopColor:" #C21975"}} />
+        <stop offset="1" style={{ stopColor: "#7024C4" }} />
+      </linearGradient>
+      <path id="XMLID_81_" style={{ fill: "url(#XMLID_3_)" }} d="M275.517,133C196.933,133,133,196.933,133,275.516
+		s63.933,142.517,142.517,142.517S418.034,354.1,418.034,275.516S354.101,133,275.517,133z M275.517,362.6
+		c-48.095,0-87.083-38.988-87.083-87.083s38.989-87.083,87.083-87.083c48.095,0,87.083,38.988,87.083,87.083
+		C362.6,323.611,323.611,362.6,275.517,362.6z"/>
+
+      <linearGradient id="XMLID_4_" gradientUnits="userSpaceOnUse" x1="418.306" y1="4.5714" x2="418.306" y2="549.7202" gradientTransform="matrix(1 0 0 -1 0 554)">
+        <stop offset="0" style={{ stopColor: "#E09B3D" }} />
+        <stop offset={0.3} style={{ stopColor: "#C74C4D" }} />
+        <stop offset="0.6" style={{ stopColor: "#C21975" }} />
+        <stop offset="1" style={{ stopColor: "#7024C4" }} />
+      </linearGradient>
+      <circle id="XMLID_83_" style={{ fill: "url(#XMLID_4_)" }} cx="418.306" cy="134.072" r="34.149" />
+    </g>
+  </svg>
+)
+
+export const YtIcon = (props: IconSvgProps) => (
+  <svg height="22px" width="22px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 461.001 461.001" xmlSpace="preserve">
+    <g>
+      <path style={{ fill: "#F61C0D" }} d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728
+		c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137
+		C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607
+		c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z"/>
+    </g>
+  </svg>
+)
+
+export const TiktokIcon = (props: IconSvgProps) => (
+  <svg fill="#000000" width="22px" height="22px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlSpace="preserve"><path d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 10.692 6.33 6.33 0 0 0 10.857-4.424V8.687a8.182 8.182 0 0 0 4.773 1.526V6.79a4.831 4.831 0 0 1-1.003-.104z" /></svg>
+)

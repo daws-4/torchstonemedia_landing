@@ -26,6 +26,9 @@ import {
   HeartFilledIcon,
   SearchIcon,
   Logo,
+  TiktokIcon,
+  IgIcon,
+  YtIcon,
 } from "@/components/icons";
 
 export const Navbar = () => {
@@ -101,18 +104,18 @@ export const Navbar = () => {
       >
         <NavbarItem className="hidden sm:flex gap-2">
           <Link isExternal aria-label="Twitter" href={siteConfig.links.twitter}>
-            <TwitterIcon className="text-black" />
+            <TiktokIcon className="text-black" />
           </Link>
           <Link isExternal aria-label="Discord" href={siteConfig.links.discord}>
-            <DiscordIcon className="text-black" />
+            <YtIcon className="text-black" />
           </Link>
           <Link isExternal aria-label="Github" href={siteConfig.links.github}>
-            <GithubIcon className="text-black" />
+            <IgIcon className="text-black" />
           </Link>
           <ThemeSwitch />
         </NavbarItem>
-        <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
-        <NavbarItem className="hidden md:flex">
+        {/* <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem> */}
+        {/* <NavbarItem className="hidden md:flex">
           <Button
             isExternal
             as={Link}
@@ -123,7 +126,7 @@ export const Navbar = () => {
           >
             Sponsor
           </Button>
-        </NavbarItem>
+        </NavbarItem> */}
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
