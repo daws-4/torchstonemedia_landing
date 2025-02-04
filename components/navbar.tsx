@@ -54,7 +54,7 @@ export const Navbar = () => {
   );
 
   return (
-    <HeroUINavbar maxWidth="xl" position="sticky" className=' bg-slate-200'>
+    <HeroUINavbar maxWidth="xl" position="sticky" className=' bg-slate-200 dark:bg-slate-900'>
       <NavbarContent className="basis-1/5 sm:basis-full " justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
@@ -102,7 +102,7 @@ export const Navbar = () => {
         className="hidden sm:flex basis-1/5 sm:basis-full"
         justify="end"
       >
-        <NavbarItem className="hidden sm:flex gap-2">
+        <NavbarItem className="hidden sm:flex gap-2 bg-slate-200 rounded p-4">
           <Link isExternal aria-label="Twitter" href={siteConfig.links.twitter}>
             <TiktokIcon className="text-black" />
           </Link>
