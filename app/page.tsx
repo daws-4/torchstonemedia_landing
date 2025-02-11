@@ -102,8 +102,8 @@ export default function Home() {
             <br />
           </div>
           <div className='flex justify-end py-36 '>
-          <div className=" w-1/2 pr-32   text-justify">
-              <h2 ref={titleRef2} className={subtitle()}>Fotografías Profesionales, Grabaciones, Actos de grado, Matrimonios Producción de videoclips, videos promocionales, reels para artistas, influencers o marcas</h2>
+            <div className=" w-2/3 pr-32 text-4xl text-justify">
+              <h2 ref={titleRef2} className={`${subtitle()} font-kanit `}>Fotografías Profesionales, Grabaciones, Actos de grado, Matrimonios Producción de videoclips, videos promocionales, reels para artistas, influencers o marcas.</h2>
           </div>
           </div>
         </div>
