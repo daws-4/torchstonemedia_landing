@@ -253,7 +253,10 @@ export default function Home() {
       </section>
       {/* misión y visión */}
       <section>
-
+            Misión
+        Potenciar el crecimiento y el éxito de nuestros clientes mediante soluciones tecnológicas integrales e innovadoras en producción audiovisual, marketing, diseño gráfico y programación, impulsando sus marcas en el entorno digital.
+        Visión
+        Ser la empresa líder y referente en la transformación digital de marcas, reconocida por nuestra capacidad de innovación constante y la excelencia en nuestros servicios integrales, generando un impacto positivo en el éxito de nuestros clientes y en el mercado.
       </section>
       {/* equipo */}
     </>
