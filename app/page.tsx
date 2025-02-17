@@ -8,7 +8,7 @@ import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 import { useRef, useEffect } from "react";
-import { Form, Input, Button, Checkbox, Textarea } from '@heroui/react';
+import { Form, Input, Button, Checkbox, Textarea, Card, Divider, CardBody, CardHeader } from '@heroui/react';
 
 export default function Home() {
   //izquierda
@@ -17,6 +17,7 @@ export default function Home() {
   const titleRef2 = useRef<HTMLHeadingElement>(null);
   const titleRef3 = useRef<HTMLHeadingElement>(null);
   const titleRef4 = useRef<HTMLHeadingElement>(null);
+  const misionRef = useRef<HTMLHeadingElement>(null);
 
   //derecha
 
@@ -24,6 +25,7 @@ export default function Home() {
   const ref2 = useRef<HTMLDivElement>(null);
   const ref3 = useRef<HTMLDivElement>(null);
   const ref4 = useRef<HTMLDivElement>(null);
+  const visionRef = useRef<HTMLHeadingElement>(null);
 
 
   useEffect(() => {
@@ -42,12 +44,14 @@ export default function Home() {
     if (titleRef2.current) observer.observe(titleRef2.current);
     if (titleRef3.current) observer.observe(titleRef3.current);
     if (titleRef4.current) observer.observe(titleRef4.current);
+    if (misionRef.current) observer.observe(misionRef.current);
 
     return () => {
       if (titleRef1.current) observer.unobserve(titleRef1.current);
       if (titleRef2.current) observer.unobserve(titleRef2.current);
       if (titleRef3.current) observer.unobserve(titleRef3.current);
       if (titleRef4.current) observer.unobserve(titleRef4.current);
+      if (misionRef.current) observer.unobserve(misionRef.current);
     };
   }, []);
   useEffect(() => {
@@ -66,12 +70,14 @@ export default function Home() {
     if (ref2.current) observer.observe(ref2.current);
     if (ref3.current) observer.observe(ref3.current);
     if (ref4.current) observer.observe(ref4.current);
+    if (visionRef.current) observer.observe(visionRef.current);
 
     return () => {
       if (ref1.current) observer.unobserve(ref1.current);
       if (ref2.current) observer.unobserve(ref2.current);
       if (ref3.current) observer.unobserve(ref3.current);
       if (ref4.current) observer.unobserve(ref4.current);
+      if (visionRef.current) observer.unobserve(visionRef.current);
     };
   }, []);
 
@@ -180,20 +186,22 @@ export default function Home() {
 
       {/* contacto */}
 
-      <section className='mt-12'>
+      <section className='mt-12 border-b-4'>
         <div className='flex items-center justify-center m-6 mb-14'>
           <span className={title()}>CONTACTO&nbsp;</span>
         </div>
         <div className='grid grid-cols-3'>
         <div className='flex flex-col items-center justify-center gap-8'>
-          <div>
+          <Card className='p-4'>
             <h1>Email de contacto:</h1>
+            <Divider/>
             <p>emailexample@example.com</p>
-          </div>
-          <div>
+          </Card>
+            <Card className='p-4'>
             <h1>Teléfono de contacto:</h1>
+            <Divider/>
             <p>+58 424 1234567</p>
-          </div>
+          </Card>
         </div>
         <div className='flex flex-col items-center justify-center gap-8'>
             <Button className='flex flex-wrap' variant='bordered'>
@@ -249,15 +257,34 @@ export default function Home() {
 
           </Form>
         </div>
-|     </div>
-      </section>
+     </div>
+      </section >
       {/* misión y visión */}
-      <section>
+      <section className='grid sm:grid-cols-2 grid-cols-1  items-center justify-center mx-32 gap-12 mt-6'>
+        <div ref={misionRef}>
+        <Card  className='mt-12'>
+          <CardHeader className='text-2xl flex items-center justify-center'>
             Misión
+          </CardHeader>
+          <Divider/>
+              <CardBody className='text-xl text-justify'>
         Potenciar el crecimiento y el éxito de nuestros clientes mediante soluciones tecnológicas integrales e innovadoras en producción audiovisual, marketing, diseño gráfico y programación, impulsando sus marcas en el entorno digital.
+              </CardBody>
+        </Card>
+        </div>
+        <div ref={visionRef}> 
+          <Card  className='mt-12'>
+            <CardHeader className='text-2xl flex items-center justify-center'>
         Visión
-        Ser la empresa líder y referente en la transformación digital de marcas, reconocida por nuestra capacidad de innovación constante y la excelencia en nuestros servicios integrales, generando un impacto positivo en el éxito de nuestros clientes y en el mercado.
+            </CardHeader>
+            <Divider />
+            <CardBody className='text-xl text-justify'>
+        Ser la empresa referente en la transformación digital de marcas y en la producción de sistemas de gestión de información, reconocida por nuestra capacidad de innovación constante y la excelencia en nuestros servicios integrales, generando un impacto positivo en el éxito de nuestros clientes y en el mercado.
+            </CardBody>
+          </Card>
+        </div>
       </section>
+      
       {/* equipo */}
     </>
   );
