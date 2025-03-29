@@ -54,8 +54,8 @@ export default function RootLayout({
             <footer className="bg-blue-500 text-white py-8 mt-14">
               <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
                 <div className="mb-4 md:mb-0">
-                  <h2 className="text-2xl font-bold text-orange-500">Empresa XYZ</h2>
-                  <p className="text-sm">© 2023 Empresa XYZ. Todos los derechos reservados.</p>
+                  <h2 className="text-2xl font-bold text-orange-500">TORCHSTONE</h2>
+                  <p className="text-sm">© 2025 TORCHSTONE. Todos los derechos reservados.</p>
                 </div>
                 <div className="flex flex-col md:flex-row gap-4">
                   <div>
