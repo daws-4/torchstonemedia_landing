@@ -17,7 +17,7 @@ export const siteConfig = {
       href: "/pricing",
     },
     {
-      label: "Misión y Visión",
+      label: "Nosotros",
       href: "/blog",
     },
     {
