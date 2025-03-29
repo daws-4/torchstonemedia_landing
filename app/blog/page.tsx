@@ -6,16 +6,17 @@ import { color } from "framer-motion";
 
 export default function BlogPage() {
   return (
-    <div className="flex flex-col items-center justify-center gap-4 py-8 md:py-10"> {/* Contenedor que previene el desbordamiento */}
-  <div className="inline-block max-w-xl text-center justify-center"> {/* Contenedor responsivo estándar */}
+    <div className="flex flex-col items-center justify-center gap-4 py-8 md:py-10 w-full max-w-7xl mx-auto px-4 sm:px-6"> {/* Contenedor que previene el desbordamiento */}
+  <div className="inline-block max-w-xl text-center justify-center"> 
+    {/* Contenedor responsivo estándar */}
         
     {/* Título principal */}
       <span className={title({color: "blue"})}>Nosotros</span>
       <br />
     {/* Slogan */}
     <h1>📢 ¡Somos pioneros en desarrollo de software en el Táchira! 💻🚀</h1>
-        {/* Bloque de presentación */}
-    <div className="bg-white rounded-lg md:rounded-xl shadow-sm p-6 md:p-8 mb-8 md:mb-10 border border-gray-100">
+    {/* Bloque de presentación */}
+    <div className="bg-white rounded-lg md:rounded-xl shadow-sm p-6 md:p-8 mb-8 md:mb-10 border border-gray-100 w-full">
       <p className="text-base md:text-lg text-gray-700 mb-4 md:mb-6">
         En <strong className="text-blue-700">TORCHSTONE</strong>, buscamos la innovación tecnológica en el estado Táchira para mejorar el estilo de vida de nuestros vecinos.
       </p>
