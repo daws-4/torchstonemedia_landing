@@ -17,7 +17,7 @@ export default function BlogPage() {
         {/* Bloque de presentación */}
     <div className="bg-white rounded-lg md:rounded-xl shadow-sm p-6 md:p-8 mb-8 md:mb-10 border border-gray-100">
       <p className="text-base md:text-lg text-gray-700 mb-4 md:mb-6">
-        En <strong className="text-blue-700">TORCHSTONE</strong>, nos enorgullece ser pioneros en la innovación tecnológica en el estado Táchira.
+        En <strong className="text-blue-700">TORCHSTONE</strong>, buscamos la innovación tecnológica en el estado Táchira para mejorar el estilo de vida de nuestros vecinos.
       </p>
       
       <div className="h-px bg-gradient-to-r from-blue-400 to-blue-100 rounded-full mb-6 md:mb-8"></div>
