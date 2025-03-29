@@ -21,7 +21,6 @@ export default function BlogPage() {
         En <strong className="text-blue-700">TORCHSTONE</strong>, buscamos la innovación tecnológica en el estado Táchira para mejorar el estilo de vida de los ciudadanos. 
         <br />
       </p>
-      
       <div className="h-px bg-gradient-to-r from-blue-400 to-blue-100 rounded-full mb-6 md:mb-8"></div>
       
       <div className="space-y-4 md:space-y-6">
