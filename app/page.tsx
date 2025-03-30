@@ -186,7 +186,7 @@ export default function Home() {
       </section>
 
       {/* contacto */}
-
+{/* 
       <section className='mt-12 border-b-4'>
         <div className='flex items-center justify-center m-6 mb-14'>
           <span className={title()}>CONTACTO&nbsp;</span>
@@ -259,7 +259,7 @@ export default function Home() {
           </Form>
         </div>
      </div>
-      </section >
+      </section > */}
       {/* misión y visión */}
       <section className='grid sm:grid-cols-2 grid-cols-1  items-center justify-center mx-32 gap-12 mt-6'>
         <div ref={misionRef}>
@@ -269,7 +269,7 @@ export default function Home() {
           </CardHeader>
           <Divider/>
               <CardBody className='text-xl text-justify'>
-        Potenciar el crecimiento y el éxito de nuestros clientes mediante soluciones tecnológicas integrales e innovadoras en producción audiovisual, marketing, diseño gráfico y programación, impulsando sus marcas en el entorno digital.
+        Potenciar el crecimiento y el éxito de nuestros clientes mediante soluciones tecnológicas integrales e innovadoras en cuanto a optimización y automatización de diversos procesos mecanicos tediosos, pudiendose ser más amigables a nuevos trabajadores o clientes.
               </CardBody>
         </Card>
         </div>
@@ -280,13 +280,13 @@ export default function Home() {
             </CardHeader>
             <Divider />
             <CardBody className='text-xl text-justify'>
-        Ser la empresa referente en la transformación digital de marcas y en la producción de sistemas de gestión de información, reconocida por nuestra capacidad de innovación constante y la excelencia en nuestros servicios integrales, generando un impacto positivo en el éxito de nuestros clientes y en el mercado.
+        Ser la empresa referente en la transformación digital de marcas y en la producción de sistemas de gestión de información, reconocida por nuestra capacidad de innovación constante y la excelencia en nuestros servicios integrales, generando un impacto positivo en el mercado.
             </CardBody>
           </Card>
         </div>
       </section>
       {/* productos */}
-      <section className="flex justify-center items-center py-4">
+      <section id="productos" className="flex justify-center items-center py-4">
   <Card className="py-4">
     <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
       <p className="text-tiny uppercase font-bold">Tan simple</p>
@@ -303,7 +303,7 @@ export default function Home() {
       />
     </CardBody>
     <div className="justify-center flex flex-wrap gap-4 items-center">
-    <Button color="primary" variant="ghost">
+    <Button color="primary" variant="ghost" as="a" href="/productos/busqrcode">
     Adquirir
     </Button>
     </div>
