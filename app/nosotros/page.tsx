@@ -14,6 +14,33 @@ export default function BlogPage() {
     <h1 className = "text-3xl">📢 ¡Somos pioneros en desarrollo de software en el Táchira! 💻🚀</h1>
     <br />
     {/* Bloque de presentación */}
+    <div className="bg-white rounded-lg md:rounded-xl shadow-sm p-6 md:p-8 mb-8 md:mb-10 border border-gray-100 w-full">
+      <p className="text-base md:text-lg text-gray-700 mb-4 md:mb-6">
+        En <span className="text-blue-700 font-bold">TORCHSTONE</span>, buscamos la innovación tecnológica en el estado Táchira para mejorar el estilo de vida de los ciudadanoss. 
+        <br />
+      </p>
+      <div className="h-px bg-gradient-to-r from-blue-400 to-blue-100 rounded-full mb-6 md:mb-8"></div>
+      
+      <div className="space-y-4 md:space-y-6">
+        <h3 className="text-lg md:text-xl font-bold text-blue-800 flex items-center">
+          <svg className="w-5 h-5 md:w-6 md:h-6 mr-2" fill="currentColor" viewBox="0 0 20 20">
+            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+          </svg>
+          ¿Por qué elegirnos?
+        </h3>
+        <ul className="space-y-3 md:space-y-4 pl-2">
+          {[
+            "Experiencia y trayectoria como referentes",
+            "Equipo especializado en desarrollo",
+            "Compromiso con la excelencia"
+          ].map((item, index) => (
+            <li key={index} className="flex items-start">
+              <span className="text-green-500 mr-2 mt-0.5">✓</span>
+              <span className="text-gray-700 text-sm md:text-base">{item}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
     <div className="bg-gray-50 flex h-90 w-600 p-4">
     <h1>En <strong className="text-blue-700">TORCHSTONE</strong>, buscamos la innovación tecnológica en el estado Táchira para mejorar el estilo de vida de los ciudadanoss. </h1>
     </div>
@@ -57,7 +84,9 @@ export default function BlogPage() {
           </span>
         ))}
       </div>
+    </div>
   </div>
+
   );
 }
 
