@@ -290,20 +290,21 @@ export default function Home() {
   <Card className="py-4">
     <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
       <p className="text-tiny uppercase font-bold">Tan simple</p>
-      <small className="text-default-500">Que hasta un Alcatel sirve</small>
-      <h4 className="font-bold text-large">BuscoQRCode</h4>
+      <small className="text-default-500 text-sm">Que hasta un Alcatel sirve</small>
+      <h4 className="font-bold text-large text-orange-500">BusQRCode</h4>
+      <p className="wrap text-justify max-w-xs">Con la ayuda de los QR, automatiza el registro y control de los fiscales ahorrando las inmensas hojas a solo unos pocos datos en una computadora o teléfono</p>
     </CardHeader>
     <CardBody className="overflow-visible py-2">
         <Image
         alt="Card background"
         className="object-cover rounded-xl"
         src="https://heroui.com/images/hero-card-complete.jpeg"
-        width={270}
+        width={329}
       />
     </CardBody>
     <div className="justify-center flex flex-wrap gap-4 items-center">
     <Button color="primary" variant="ghost">
-    Ghost
+    Adquirir
     </Button>
     </div>
   </Card>
