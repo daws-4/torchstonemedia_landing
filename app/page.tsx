@@ -4,11 +4,12 @@ import { Snippet } from "@heroui/snippet";
 import { Code } from "@heroui/code";
 import { button as buttonStyles } from "@heroui/theme";
 
+
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 import { useRef, useEffect } from "react";
-import { Form, Input, Button, Checkbox, Textarea, Card, Divider, CardBody, CardHeader } from '@heroui/react';
+import { Form, Input, Button, Checkbox, Textarea, Card, Divider, CardBody, CardHeader, Image} from '@heroui/react';
 
 export default function Home() {
   //izquierda
@@ -284,8 +285,30 @@ export default function Home() {
           </Card>
         </div>
       </section>
-      
-      {/* equipo */}
+      {/* productos */}
+      <section className="flex justify-center items-center py-4">
+  <Card className="py-4">
+    <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+      <p className="text-tiny uppercase font-bold">Tan simple</p>
+      <small className="text-default-500">Que hasta un Alcatel sirve</small>
+      <h4 className="font-bold text-large">BuscoQRCode</h4>
+    </CardHeader>
+    <CardBody className="overflow-visible py-2">
+        <Image
+        alt="Card background"
+        className="object-cover rounded-xl"
+        src="https://heroui.com/images/hero-card-complete.jpeg"
+        width={270}
+      />
+    </CardBody>
+    <div className="justify-center flex flex-wrap gap-4 items-center">
+    <Button color="primary" variant="ghost">
+    Ghost
+    </Button>
+    </div>
+  </Card>
+</section>
+
     </>
   );
 }
