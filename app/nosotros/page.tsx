@@ -41,38 +41,41 @@ export default function BlogPage() {
           ))}
         </ul>
       </div>
-    <div className="bg-gray-50 flex h-90 w-600 p-4">
-    <h1>En <strong className="text-blue-700">TORCHSTONE</strong>, buscamos la innovación tecnológica en el estado Táchira para mejorar el estilo de vida de los ciudadanoss. </h1>
-    </div>
-    <br />
-    <div>
-    <h1 className="text-4xl text-blue-950">¿Por qué elegirnos?</h1>
-    <br />
-    <ul className=" list-inside bg-gray-50 flex h-90 w-600 p-4">
-      <li>🔧 Experiencia y trayectoria como referentes</li>
-      <li>🚀 Innovación constante</li>
-      <li>🤝 Compromiso con la excelencia</li>
-      <li>🌍 Enfoque en el cliente</li>
-     </ul> 
-    </div>
     <div>
       <br />
     {/* Servicios */}
-    <h1 className="text-4xl text-blue-950">Nuestros Servicios</h1>
-    <br />
-    <ul className=" list-inside bg-gray-50 flex h-90 w-600 p-4">
-      <li>Desarrollo web y móvil</li>
-      <li>Software empresarial</li>
-      <li>Consultoría tecnológica</li>
-      <li>Soluciones innovadoras</li>
-    </ul>
-    </div>
+    <div className="space-y-4 md:space-y-6">
+        <h3 className="text-lg md:text-xl font-bold text-blue-800 flex items-center">
+          <svg className="w-5 h-5 md:w-6 md:h-6 mr-2" fill="currentColor" viewBox="0 0 20 20">
+            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+          </svg>
+          Nuestros Servicios
+        </h3>
+        <ul className="space-y-3 md:space-y-4 pl-2">
+          {[
+            "Desarrollo web y móvil",
+            "Software empresarial",
+            "Consultoría tecnológica",
+            "Soluciones innovadoras"
+          ].map((item, index) => (
+            <li key={index} className="flex items-start">
+              <span className="text-green-500 mr-2 mt-0.5">✓</span>
+              <span className="text-gray-700 text-sm md:text-base">{item}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
     <br />
     {/* CTA de contacto */}
+    <div className="space-y-4 md:space-y-6">
+        <h3 className="text-lg md:text-xl font-bold text-blue-800 flex items-center">
+          <svg className="w-5 h-5 md:w-6 md:h-6 mr-2" fill="currentColor" viewBox="0 0 20 20">
+            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+          </svg>
+          ¡Contáctanos!
+    </h3>
     <div>
-    <h1 className="text-4xl text-blue-950">¡Contáctanos!</h1>
-    <br />
-    <p className = "text-2xl">🌐 Conectamos el futuro hoy</p>
+    <p className = "text-lg">🌐 Conectamos el futuro hoy</p>
     <p className="text-base md:text-lg">📞 04126667778</p>
     <p className="text-base md:text-lg">✉️ patucasa@gmail.com</p>
     <p className="text-base md:text-lg opacity-90">📍 Ubicados en el Táchira</p> 
@@ -86,7 +89,8 @@ export default function BlogPage() {
       </div>
     </div>
   </div>
-
+  </div>
+  </div>   
   );
 }
 
