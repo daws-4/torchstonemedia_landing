@@ -1,6 +1,24 @@
 "use client";
 
+import {Card, CardBody, CardFooter, Image} from "@heroui/react";
+
+
 export default function BlogPage() {
+  const list = [
+    {
+      title: "Línea Santa Teresa - Las Lomas",
+      img: "https://venebuses.com/m1/photos/23e3597c6548765a981dc1cd8ce8e2b6.jpg",
+    },
+    {
+      title: "Línea Torbes Barrios",
+      img: "https://venebuses.com/m1/photos/a22724d91ae06d181f192086e0ba034d.jpg",
+    },
+    {
+      title: "Línea Union Cordero",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsK6x7qNnaoZOG8FRHj9tFRzFit9EDlWPCAw&s.jpg",
+    },
+  ];
+
   return (
   <div>
   <div>
@@ -70,13 +88,27 @@ export default function BlogPage() {
           <svg className="w-5 h-5 md:w-6 md:h-6 mr-2" fill="currentColor" viewBox="0 0 20 20">
             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
           </svg>
-          ¡Contáctanos!
+          Empresas con las que trabajamos
     </h3>
-    <div>
-    <p className = "text-lg">🌐 Conectamos el futuro hoy</p>
-    <p className="text-base md:text-lg">📞 04126667778</p>
-    <p className="text-base md:text-lg">✉️ patucasa@gmail.com</p>
-    <p className="text-base md:text-lg opacity-90">📍 Ubicados en el Táchira</p> 
+    <div className="gap-2 grid grid-cols-2 sm:grid-cols-4">
+      {list.map((item, index) => (
+        /* eslint-disable no-console */
+        <Card key={index} isPressable shadow="sm" onPress={() => console.log("item pressed")}>
+          <CardBody className="overflow-visible p-0">
+            <Image
+              alt={item.title}
+              className="w-full object-cover h-[140px]"
+              radius="lg"
+              shadow="sm"
+              src={item.img}
+              width="100%"
+            />
+          </CardBody>
+          <CardFooter className="text-small justify-between">
+            <b>{item.title}</b>
+          </CardFooter>
+        </Card>
+      ))}
     </div>
     <div className="mt-4 md:mt-6 flex flex-wrap justify-center gap-2">
         {['#InnovaciónTachirense', '#SoftwareDeCalidad'].map((tag) => (
