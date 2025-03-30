@@ -18,7 +18,7 @@ export const siteConfig = {
     },
     {
       label: "Nosotros",
-      href: "/blog",
+      href: "/nosotros",
     },
     {
       label: "Staff y Colaboradores",
