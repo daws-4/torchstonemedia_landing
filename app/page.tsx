@@ -172,18 +172,42 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <div className="mt-2 bg-cover bg-center bg-no-repeat mx-auto" style={{ backgroundImage: "url('fondo4.jpg')" }}>
-          <div ref={ref4} className='flex justify-end pt-14 pb-14 pr-32'>
-            <span className={title({ color: "cyan" })}>PROGRAMACIÓN&nbsp;</span>
-            <br />
+  <div
+    className="mt-2 bg-cover bg-center bg-no-repeat mx-auto"
+    style={{ backgroundImage: "url('fondo4.jpg')" }}
+  >
+    <div ref={ref4} 
+      className="flex justify-end pt-14 pb-14 pr-32 "
+      >
+          <div style={{
+          backgroundColor: "rgba(0, 0, 0, 0.5)", // Fondo negro con opacidad
+          padding: "20px", // Espaciado interno
+          borderRadius: "20px", // Bordes redondeados
+          color: "white", // Color del texto
+          
+        }}>
+
+      <span className={title({ color: "cyan" })}>PROGRAMACIÓN&nbsp;</span>
           </div>
-          <div className='pl-32 py-36 '>
-            <div className=" w-2/3  text-4xl text-justify">
-              <h2 ref={titleRef4} className={`${subtitle()} font-kanit `}>Landing Pages, Sistemas de gestión de datos, apps móviles, páginas web, apps de escritorio, gestión de bases de datos </h2>
-            </div>
-          </div>
-        </div>
-      </section>
+      <br />
+    </div>
+    <div className="pl-32 py-36">
+      <div
+        className="w-2/3 text-4xl text-justify relative"
+        style={{
+          backgroundColor: "rgba(0, 0, 0, 0.7)", // Fondo negro con opacidad
+          padding: "15px", // Espaciado interno
+          borderRadius: "20px", // Bordes redondeados
+          color: "white", // Color del texto
+        }}
+      >
+        <h2 ref={titleRef4} className={`${subtitle()} font-kanit`}>
+          Landing Pages, Sistemas de gestión de datos, apps móviles, páginas web, apps de escritorio, gestión de bases de datos
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* contacto */}
 {/* 
