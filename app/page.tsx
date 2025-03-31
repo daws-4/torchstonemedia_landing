@@ -202,7 +202,7 @@ export default function Home() {
         }}
       >
         <h2 ref={titleRef4} className={`${subtitle()} font-kanit`}>
-          Landing Pages, Sistemas de gestión de datos, apps móviles, páginas web, apps de escritorio, gestión de bases de datos
+          Landing Pages, sistemas de gestión de datos y bases de datos, apps móviles, páginas web, lógica de dispositivos y demás.
         </h2>
       </div>
     </div>
@@ -310,30 +310,60 @@ export default function Home() {
         </div>
       </section>
       {/* productos */}
-      <section id="productos" className="flex justify-center items-center py-4">
-  <Card className="py-4">
-    <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-      <p className="text-tiny uppercase font-bold">Tan simple</p>
-      <small className="text-default-500 text-sm">Que hasta un Alcatel sirve</small>
-      <h4 className="font-bold text-large text-orange-500">BusQRCode</h4>
-      <p className="wrap text-justify max-w-xs">Con la ayuda de los QR, automatiza el registro y control de los fiscales ahorrando las inmensas hojas a solo unos pocos datos en una computadora o teléfono</p>
-    </CardHeader>
-    <CardBody className="overflow-visible py-2">
+      <section>
+  <div id="productos" className="flex justify-center items-center py-4 gap-6">
+    {/* Primera tarjeta */}
+    <Card className="py-4">
+      <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+        <p className="text-tiny uppercase font-bold">Tan simple</p>
+        <small className="text-default-500 text-sm">Que hasta un Alcatel sirve</small>
+        <h4 className="font-bold text-large text-orange-500">BusQRCode</h4>
+        <p className="wrap text-justify max-w-xs">
+          Con la ayuda de los QR, automatiza el registro y control de los fiscales escaneandolo con cualquier teléfono, ahorrando las inmensas hojas a solo unos pocos datos en una computadora o teléfono.
+        </p>
+      </CardHeader>
+      <CardBody className="overflow-visible py-2">
         <Image
-        alt="Card background"
-        className="object-cover rounded-xl"
-        src="https://heroui.com/images/hero-card-complete.jpeg"
-        width={329}
-      />
-    </CardBody>
-    <div className="justify-center flex flex-wrap gap-4 items-center">
-    <Button color="primary" variant="ghost" as="a" href="/productos/busqrcode">
-    Adquirir
-    </Button>
-    </div>
-  </Card>
-</section>
+          alt="Card background"
+          className="object-cover rounded-xl"
+          src="https://heroui.com/images/hero-card-complete.jpeg"
+          width={329}
+        />
+      </CardBody>
+      <div className="justify-center flex flex-wrap gap-4 items-center">
+        <Button color="primary" variant="ghost" as="a" href="/productos/busqrcode">
+          Adquirir
+        </Button>
+      </div>
+    </Card>
 
+    {/* Segunda tarjeta */}
+    <Card className="py-4">
+      <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+        <p className="text-tiny uppercase font-bold">¿No sabes contar?</p>
+        <small className="text-default-500 text-sm">Te ayudamos con eso</small>
+        <h4 className="font-bold text-large text-orange-500">Contador de Personas</h4>
+        <p className="wrap text-justify max-w-xs">
+          ¿No estas muy seguro de cuantas personas entraron en un lugar o vehículo grande?
+           Con este sistema, podrás contar cuantas personas entraron en todo el día, y además, podrás tener un historial de los registros.
+        </p>
+      </CardHeader>
+      <CardBody className="overflow-visible py-2">
+        <Image
+          alt="Card background"
+          className="object-cover rounded-xl"
+          src="https://heroui.com/images/hero-card-complete.jpeg"
+          width={329}
+        />
+      </CardBody>
+      <div className="justify-center flex flex-wrap gap-4 items-center">
+        <Button isDisabled color="primary" as="b" href="/productos/cdp">
+          Proximamente
+        </Button>
+      </div>
+    </Card>
+  </div>
+</section>
     </>
   );
 }
