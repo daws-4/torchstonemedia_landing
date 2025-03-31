@@ -131,7 +131,7 @@ export default function Home() {
         </div>
       </section>
       <section className="bg-gray-800">
-        <div className="mt-2 bg-cover bg-center bg-no-repeat mx-auto" style={{ backgroundImage: "url('fondo1.jpeg')" }}>
+        <div className="mt-2 bg-cover bg-center bg-no-repeat mx-auto" style={{ backgroundImage: "url('fondo1.jpg')" }}>
           <div ref={titleRef1} className='pt-14 pb-14 pl-32'>
             <span className={title({ color: "yellow" })}>AUTOMATIZACIÓN&nbsp;</span>
             <br />
@@ -144,28 +144,58 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <div className="mt-2 bg-cover bg-center bg-no-repeat mx-auto" style={{ backgroundImage: "url('fondo2.jpg')" }}>
+        <div className="mt-2 bg-cover bg-center bg-no-repeat mx-auto" style={{ backgroundImage: "url('fondo2.jpeg')", backgroundPosition:"0px -70px" }}>
           <div ref={ref2} className='flex justify-end pt-14 pb-14 pr-32'>
+            <div style={{
+            backgroundColor: "rgba(0, 0, 0, 0.5)", // Fondo negro con opacidad
+            padding: "20px", // Espaciado interno
+            borderRadius: "20px", // Bordes redondeados
+            color: "white", // Color del texto
+            display: "inline-block"
+            }}>
             <span className={title()}>PRODUCTOS&nbsp;</span>
             <span className={title({ color: "green" })}>NOVEDOSOS&nbsp;</span>
+            </div>
             <br />
           </div>
           <div className='pl-32  py-36 '>
-            <div className=" w-2/3 text-4xl text-justify">
+            <div className=" w-2/3 text-4xl text-justify"
+            style={{
+              backgroundColor: "rgba(0, 0, 0, 0.7)", // Fondo negro con opacidad
+              padding: "15px", // Espaciado interno
+              borderRadius: "20px", // Bordes redondeados
+              color: "white", // Color del texto
+            }}>
               <h2 ref={titleRef2} className={`${subtitle()} font-kanit `}>Meta ads, Google ads, presencia en redes sociales, SEO, estrategias publicitarias, presencia de marca </h2>
             </div>
           </div>
         </div>
       </section>
       <section>
-        <div className="mt-2 bg-cover bg-center bg-no-repeat mx-auto" style={{ backgroundImage: "url('fondo3.jpg')" }}>
+        <div className="mt-2 bg-cover bg-center bg-no-repeat mx-auto" style={{ backgroundImage: "url('fondo3.webp')" }}>
           <div ref={titleRef3} className='pt-14 pb-14 pl-32'>
+            <div style={{
+            backgroundColor: "rgba(0, 0, 0, 0.5)", // Fondo negro con opacidad
+            padding: "20px", // Espaciado interno
+            borderRadius: "20px", // Bordes redondeados
+            color: "white", // Color del texto
+            display: "inline-block"
+            }}>
+
             <span className={title()}>ATENCIÓN AL&nbsp;</span>
             <span className={title({ color: "green" })}>CLIENTE&nbsp;</span>
+            </div>
             <br />
           </div>
           <div className='flex justify-end py-36 '>
-            <div className=" w-2/3 pr-32 text-4xl text-justify">
+            <div 
+            className=" w-2/3 pr-32 text-4xl text-justify"
+            style={{
+              backgroundColor: "rgba(0, 0, 0, 0.7)", // Fondo negro con opacidad
+              padding: "15px", // Espaciado interno
+              borderRadius: "20px", // Bordes redondeados
+              color: "white", // Color del texto
+            }}>
               <h2 ref={ref3} className={`${subtitle()} font-kanit `}>Logotipos, branding, ilustraciones digitales, flyers para eventos, imagen de marca, edición de fotografías</h2>
             </div>
           </div>
@@ -180,7 +210,7 @@ export default function Home() {
       className="flex justify-end pt-14 pb-14 pr-32 "
       >
           <div style={{
-          backgroundColor: "rgba(0, 0, 0, 0.5)", // Fondo negro con opacidad
+          backgroundColor: "rgba(0, 0, 0, 0.7)", // Fondo negro con opacidad
           padding: "20px", // Espaciado interno
           borderRadius: "20px", // Bordes redondeados
           color: "white", // Color del texto
