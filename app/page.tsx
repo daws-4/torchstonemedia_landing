@@ -92,14 +92,14 @@ export default function Home() {
     <>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
         <div className="inline-block max-w-xl text-center justify-center">
-          <span className={title()}>IMPULSA TU&nbsp;</span>
+          <span className={title()}>INNOVA TU&nbsp;</span>
           <span className={title({ color: "yellow" })}>MARCA&nbsp;</span>
           <br />
           <span className={title()}>
             CON TODOS LOS RECURSOS NECESARIOS PARA DESTACAR.
           </span>
           <div className='text-default-200 w-full mt-4 text-4xl mb-4'>
-            Contenido Audiovisual, Marketing, Diseño Gráfico, Programación.
+            Automatización, Productos Novedosos, Atención al Cliente, Programación.
           </div>
         </div>
 
@@ -133,8 +133,7 @@ export default function Home() {
       <section className="bg-gray-800">
         <div className="mt-2 bg-cover bg-center bg-no-repeat mx-auto" style={{ backgroundImage: "url('fondo1.jpeg')" }}>
           <div ref={titleRef1} className='pt-14 pb-14 pl-32'>
-            <span className={title()}>CONTENIDO&nbsp;</span>
-            <span className={title({ color: "blue" })}>AUDIOVISUAL&nbsp;</span>
+            <span className={title({ color: "yellow" })}>AUTOMATIZACIÓN&nbsp;</span>
             <br />
           </div>
           <div className='flex justify-end py-36 '>
@@ -147,7 +146,8 @@ export default function Home() {
       <section>
         <div className="mt-2 bg-cover bg-center bg-no-repeat mx-auto" style={{ backgroundImage: "url('fondo2.jpg')" }}>
           <div ref={ref2} className='flex justify-end pt-14 pb-14 pr-32'>
-            <span className={title({ color: "blue" })}>MARKETING&nbsp;</span>
+            <span className={title()}>PRODUCTOS&nbsp;</span>
+            <span className={title({ color: "green" })}>NOVEDOSOS&nbsp;</span>
             <br />
           </div>
           <div className='pl-32  py-36 '>
@@ -160,8 +160,8 @@ export default function Home() {
       <section>
         <div className="mt-2 bg-cover bg-center bg-no-repeat mx-auto" style={{ backgroundImage: "url('fondo3.jpg')" }}>
           <div ref={titleRef3} className='pt-14 pb-14 pl-32'>
-            <span className={title()}>DISEÑO&nbsp;</span>
-            <span className={title({ color: "green" })}>GRÁFICO&nbsp;</span>
+            <span className={title()}>ATENCIÓN AL&nbsp;</span>
+            <span className={title({ color: "green" })}>CLIENTE&nbsp;</span>
             <br />
           </div>
           <div className='flex justify-end py-36 '>
@@ -326,7 +326,7 @@ export default function Home() {
         <Image
           alt="Card background"
           className="object-cover rounded-xl"
-          src="https://heroui.com/images/hero-card-complete.jpeg"
+          src="/BusQRCode.jpg"
           width={329}
         />
       </CardBody>
