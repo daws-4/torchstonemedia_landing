@@ -60,9 +60,9 @@ export const siteConfig = {
     },
   ],
   links: {
-    nosotros: "http://localhost:3000/nosotros",
+    // nosotros: "http://localhost:3000/nosotros",
     twitter: "https://twitter.com/hero_ui",
-    servicios: "http://localhost:3000/productos",
+  //  servicios: "http://localhost:3000/productos",
     discord: "https://discord.gg/9b6yyZKmH4",
     sponsor: "https://patreon.com/jrgarciadev",
   },
