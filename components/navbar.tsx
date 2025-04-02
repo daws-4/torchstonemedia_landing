@@ -109,7 +109,7 @@ export const Navbar = () => {
           <Link isExternal aria-label="Discord" href={siteConfig.links.discord}>
             <YtIcon className="text-black" />
           </Link>
-          <Link isExternal aria-label="Github" href={siteConfig.links.github}>
+          <Link isExternal aria-label="Github" href={siteConfig.links.servicios}>
             <IgIcon className="text-black" />
           </Link>
           <ThemeSwitch />
@@ -130,7 +130,7 @@ export const Navbar = () => {
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-        <Link isExternal aria-label="Github" href={siteConfig.links.github}>
+        <Link isExternal aria-label="Github" href={siteConfig.links.servicios}>
           <GithubIcon className="text-default-500" />
         </Link>
         <ThemeSwitch />

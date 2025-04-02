@@ -23,7 +23,7 @@ export default function AboutPage() {
 
     {/* Persona 2 */}
     <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-      <img src="https://cdn.britannica.com/38/200938-050-E22981D1/Freddie-Mercury-Live-Aid-Queen-Wembley-Stadium-July-13-1985.jpg" alt="Staff 2" className="w-full h-64 object-cover" />
+      <img src="https://i.pinimg.com/474x/ea/da/64/eada6462dbb21eb0654f2e34726154ee.jpg" alt="Staff 2" className="w-full h-64 object-cover" />
       <div className="p-6">
         <h3 className="text-xl font-semibold text-blue-800 text-center">gabbs05</h3>
         <p className="text-sm text-gray-500 text-center">midlaner</p>
