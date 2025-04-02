@@ -111,14 +111,14 @@ export default function Home() {
               radius: "full",
               variant: "shadow",
             })}
-            href={siteConfig.links.docs}
+            href={siteConfig.links.servicios}
           >
             Servicios
           </Link>
           <Link
             isExternal
             className={buttonStyles({ variant: "bordered", radius: "full" })}
-            href={siteConfig.links.github}
+            href={siteConfig.links.nosotros}
           >
             Sobre Nosotros
           </Link>
@@ -133,11 +133,25 @@ export default function Home() {
       <section className="bg-gray-800">
         <div className="mt-2 bg-cover bg-center bg-no-repeat mx-auto" style={{ backgroundImage: "url('fondo1.jpg')" }}>
           <div ref={titleRef1} className='pt-14 pb-14 pl-32'>
+            <div style={{
+            backgroundColor: "rgba(0, 0, 0, 0.5)", // Fondo negro con opacidad
+            padding: "20px", // Espaciado interno
+            borderRadius: "20px", // Bordes redondeados
+            color: "white", // Color del texto
+            display: "inline-block"
+            }}>
             <span className={title({ color: "yellow" })}>AUTOMATIZACIÓN&nbsp;</span>
+            </div>
             <br />
           </div>
           <div className='flex justify-end py-36 '>
-            <div className=" w-2/3 pr-32 text-4xl text-justify">
+            <div className=" w-2/3 pr-32 text-4xl text-justify"
+            style={{
+              backgroundColor: "rgba(0, 0, 0, 0.7)", // Fondo negro con opacidad
+              padding: "15px", // Espaciado interno
+              borderRadius: "20px", // Bordes redondeados
+              color: "white", // Color del texto
+            }}>
               <h2 ref={ref1} className={`${subtitle()} font-kanit `}>Fotografías Profesionales, Grabaciones, Actos de grado, Matrimonios Producción de videoclips, videos promocionales, reels para artistas, influencers o marcas.</h2>
             </div>
           </div>
@@ -361,7 +375,7 @@ export default function Home() {
         />
       </CardBody>
       <div className="justify-center flex flex-wrap gap-4 items-center">
-        <Button color="primary" variant="ghost" as="a" href="/productos/busqrcode">
+        <Button color="primary" variant="ghost" as="a" href="/productos/BusQRCode">
           Adquirir
         </Button>
       </div>
@@ -382,12 +396,12 @@ export default function Home() {
         <Image
           alt="Card background"
           className="object-cover rounded-xl"
-          src="https://heroui.com/images/hero-card-complete.jpeg"
+          src="/enconstruccion21.gif"
           width={329}
         />
       </CardBody>
       <div className="justify-center flex flex-wrap gap-4 items-center">
-        <Button isDisabled color="primary" as="b" href="/productos/cdp">
+        <Button isDisabled color="primary" as="b" href="/products/CdP">
           Proximamente
         </Button>
       </div>

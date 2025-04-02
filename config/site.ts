@@ -10,7 +10,7 @@ export const siteConfig = {
     },
     {
       label: "Servicios",
-      href: "/docs",
+      href: "/productos",
     },
     {
       label: "Contacto",
@@ -60,9 +60,9 @@ export const siteConfig = {
     },
   ],
   links: {
-    github: "https://github.com/heroui-inc/heroui",
+    nosotros: "http://localhost:3000/nosotros",
     twitter: "https://twitter.com/hero_ui",
-    docs: "https://heroui.com",
+    servicios: "http://localhost:3000/productos",
     discord: "https://discord.gg/9b6yyZKmH4",
     sponsor: "https://patreon.com/jrgarciadev",
   },
