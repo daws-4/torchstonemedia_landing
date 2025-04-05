@@ -23,7 +23,7 @@ export default function BlogPage() {
   <div>
   <div>
     {/*titulo*/}
-    <h1 className = "text-5xl text-blue-950">Nosotros</h1>
+    <h1 className = "text-5xl text-black-950">Nosotros</h1>
     <br />
   </div>
     {/* Slogan */}
@@ -112,7 +112,7 @@ export default function BlogPage() {
     </div>
     <div className="mt-4 md:mt-6 flex flex-wrap justify-center gap-2">
         {['#InnovaciónTachirense', '#SoftwareDeCalidad'].map((tag) => (
-          <span key={tag} className="bg-white/20 px-2 py-1 rounded-full text-xs md:text-sm">
+          <span key={tag} className="bg-white/20 px-2 py-1 rounded-full text-xs md:text-sm text-blue-800">
             {tag}
           </span>
         ))}

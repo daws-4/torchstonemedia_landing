@@ -98,7 +98,7 @@ export default function Home() {
           <span className={title()}>
             CON TODOS LOS RECURSOS NECESARIOS PARA DESTACAR.
           </span>
-          <div className='text-default-200 w-full mt-4 text-4xl mb-4'>
+          <div className='text-black-200 w-full mt-4 text-4xl mb-4'>
             Automatización, Productos Novedosos, Atención al Cliente, Programación.
           </div>
         </div>
@@ -134,7 +134,7 @@ export default function Home() {
         <div className="mt-2 bg-cover bg-center bg-no-repeat mx-auto" style={{ backgroundImage: "url('fondo1.jpg')" }}>
           <div ref={titleRef1} className='pt-14 pb-14 pl-32'>
             <div style={{
-            backgroundColor: "rgba(0, 0, 0, 0.5)", // Fondo negro con opacidad
+            backgroundColor: "rgba(31, 127, 206, 0.7)", // Fondo negro con opacidad
             padding: "20px", // Espaciado interno
             borderRadius: "20px", // Bordes redondeados
             color: "white", // Color del texto
@@ -147,7 +147,7 @@ export default function Home() {
           <div className='flex justify-end py-36 '>
             <div className=" w-2/3 pr-32 text-4xl text-justify"
             style={{
-              backgroundColor: "rgba(0, 0, 0, 0.7)", // Fondo negro con opacidad
+              backgroundColor: "rgba(31, 127, 206, 0.7)", // Fondo negro con opacidad
               padding: "15px", // Espaciado interno
               borderRadius: "20px", // Bordes redondeados
               color: "white", // Color del texto
