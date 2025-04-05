@@ -4,7 +4,7 @@ export default function AboutPage() {
   <div>
   <div>
     {/*Titulo*/}
-    <h1 className="text-5xl text-blue-950">Conoce a Nuestro Equipo</h1>
+    <h1 className="text-5xl text-black-950">Conoce a Nuestro Equipo</h1>
   <br />
     <h1 className="text-3xl">Un equipo  calificado y comprometido con el éxito de cada proyecto.</h1>
     <br />
