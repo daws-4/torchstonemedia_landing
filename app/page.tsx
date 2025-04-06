@@ -134,7 +134,7 @@ export default function Home() {
         <div className="mt-2 bg-cover bg-center bg-no-repeat mx-auto" style={{ backgroundImage: "url('fondo1.jpg')" }}>
           <div ref={titleRef1} className='pt-14 pb-14 pl-32'>
             <div style={{
-            backgroundColor: "rgba(31, 127, 206, 0.7)", // Fondo negro con opacidad
+            backgroundColor: "rgba(0, 0, 0, 0.7)", // Fondo negro con opacidad
             padding: "20px", // Espaciado interno
             borderRadius: "20px", // Bordes redondeados
             color: "white", // Color del texto
@@ -161,7 +161,7 @@ export default function Home() {
         <div className="mt-2 bg-cover bg-center bg-no-repeat mx-auto" style={{ backgroundImage: "url('fondo2.jpeg')", backgroundPosition:"0px -70px" }}>
           <div ref={ref2} className='flex justify-end pt-14 pb-14 pr-32'>
             <div style={{
-            backgroundColor: "rgba(0, 0, 0, 0.5)", // Fondo negro con opacidad
+            backgroundColor: " rgba(0, 0, 0, 0.5)", // Fondo negro con opacidad
             padding: "20px", // Espaciado interno
             borderRadius: "20px", // Bordes redondeados
             color: "white", // Color del texto
@@ -175,7 +175,7 @@ export default function Home() {
           <div className='pl-32  py-36 '>
             <div className=" w-2/3 text-4xl text-justify"
             style={{
-              backgroundColor: "rgba(0, 0, 0, 0.7)", // Fondo negro con opacidad
+              backgroundColor: "rgba(0, 160, 152, 0.7)", // Fondo negro con opacidad
               padding: "15px", // Espaciado interno
               borderRadius: "20px", // Bordes redondeados
               color: "white", // Color del texto
@@ -205,7 +205,7 @@ export default function Home() {
             <div 
             className=" w-2/3 pr-32 text-4xl text-justify"
             style={{
-              backgroundColor: "rgba(0, 0, 0, 0.7)", // Fondo negro con opacidad
+              backgroundColor: "rgba(185, 89, 0, 0.7)", // Fondo negro con opacidad
               padding: "15px", // Espaciado interno
               borderRadius: "20px", // Bordes redondeados
               color: "white", // Color del texto
@@ -239,7 +239,7 @@ export default function Home() {
       <div
         className="w-2/3 text-4xl text-justify relative"
         style={{
-          backgroundColor: "rgba(0, 0, 0, 0.7)", // Fondo negro con opacidad
+          backgroundColor: "rgba(58, 219, 66, 0.7)", // Fondo negro con opacidad
           padding: "15px", // Espaciado interno
           borderRadius: "20px", // Bordes redondeados
           color: "white", // Color del texto

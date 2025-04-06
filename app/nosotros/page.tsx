@@ -32,7 +32,7 @@ export default function BlogPage() {
     {/* Bloque de presentación */}
     <div className="bg-white rounded-lg md:rounded-xl shadow-sm p-6 md:p-8 mb-8 md:mb-10 border border-gray-100 w-full">
       <p className="text-base md:text-lg text-gray-700 mb-4 md:mb-6">
-        En <span className="text-blue-700 font-bold">TORCHSTONE</span>, buscamos la innovación tecnológica en el estado Táchira para mejorar el estilo de vida de los ciudadanoss. 
+        En <span className="text-blue-700 font-bold">TORCHSTONE</span>, buscamos la innovación tecnológica en el estado Táchira para mejorar el estilo de vida de los ciudadanos. 
         <br />
       </p>
       <div className="h-px bg-gradient-to-r from-blue-400 to-blue-100 rounded-full mb-6 md:mb-8"></div>
@@ -120,7 +120,7 @@ export default function BlogPage() {
     </div>
   </div>
   </div>
-  </div>   
+  </div>  
   );
 }
 

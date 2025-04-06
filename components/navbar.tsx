@@ -65,20 +65,20 @@ export const Navbar = () => {
         <ul className="hidden lg:flex gap-2 justify-start ml-2">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
-              {item.label === 'Servicios' ? (
+              {item.label === 'productos' ? (
                 <Dropdown className="border-none bg-transparent">
-                  <DropdownTrigger>
-                    <Button>{item.label}</Button>
-                  </DropdownTrigger>
-                  <DropdownMenu>
-                    <DropdownItem key={"1"}>
-                      <NextLink href="/subitem1">Subitem 1</NextLink>
-                    </DropdownItem>
-                    <DropdownItem key={"2"}>
-                      <NextLink href="/subitem2">Subitem 2</NextLink>
-                    </DropdownItem>
-                  </DropdownMenu>
-                </Dropdown>
+                <DropdownTrigger>
+                  <Button>{item.label}</Button>
+                </DropdownTrigger>
+                <DropdownMenu>
+                  <DropdownItem key={"1"}>
+                    <NextLink href="/subitem1">Subitem 1</NextLink>
+                  </DropdownItem>
+                  <DropdownItem key={"2"}>
+                    <NextLink href="/subitem2">Subitem 2</NextLink>
+                  </DropdownItem>
+                </DropdownMenu>
+              </Dropdown>
               ) : (
                 <NextLink
                   className={clsx(

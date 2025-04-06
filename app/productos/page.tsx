@@ -1,16 +1,30 @@
 "use client";
 
+import { useState } from "react";
 import { title, subtitle } from "@/components/primitives";
 import { button as buttonStyles } from "@heroui/theme";
 import { Form, Input, Button, Checkbox, Textarea, Card, Divider, CardBody, CardHeader, Image} from '@heroui/react';
 
 export default function ProductosPage() {
+    // Estado para alternar entre fondo claro y oscuro
+    const [isDarkMode, setIsDarkMode] = useState(false);
+
+    // Estilos dinámicos para el fondo
+    const backgroundStyle = isDarkMode
+      ? {
+          background: "linear-gradient(to right, #1e3c72, #2a5298)", // Fondo oscuro
+          color: "white", // Texto claro para fondo oscuro
+        }
+      : {
+          background: "linear-gradient(to right, #ff7e5f, #feb47b)", // Fondo claro
+          color: "black", // Texto oscuro para fondo claro
+        };
 
     return(
 
 <>    
 <div style={{
-        background: "linear-gradient(to right, #ff7e5f, #feb47b)", // Gradiente lineal
+        ...backgroundStyle,
         width: "105.5%", // Asegura que ocupe todo el ancho
         minHeight: "100vh", // Asegura que cubra toda la altura de la ventana
       }}>   
